@@ -16,20 +16,10 @@
                 <image src="artwork/paper.png" id="btnPaper" onclick="handleClick('paper')" class="pick"></image>
                 <image src="artwork/scissors.png"id="btnScissors" onclick="handleClick('scissors')" class="pick"></image>
             </div>
-            <div class="playerImg" hidden>
-                <image src="artwork/rock.png" id="playRock" hidden></image>
-                <image src="artwork/paper.png" id="playPaper" hidden></image>
-                <image src="artwork/scissors.png" id="playScissors" hidden></image>
-            </div>
-            <div class="versus" hidden>VS</div>
-            <div class="cpuImg" hidden>
-                <div class="cpuImg" hidden>
-                    <image src="artwork/rock.png" id="cpuRock" hidden></image>
-                    <image src="artwork/paper.png" id="cpuPaper" hidden></image>
-                    <image src="artwork/scissors.png" id="cpuScissors" hidden></image>
-                </div>
-            </div>
             <div id="scoreContainer" class="scoreContainer">
+                <div class="matchResult">
+                    <h2 id="result"></h2>
+                </div>
                 <div class="scoreBox">
                     <div class="playerChoice"></div>
                     <h3 class="score">Player Score: <span id="playerScore">0</span></h3>
@@ -41,9 +31,8 @@
             </div>
         </div>
 
-        <div id="replay" class="replay" hidden>
-            <div class="icon">!</div>
-            <div class="container">
+        <div class="container">
+            <div class="replay" id="replay" hidden>
               <div class="replay-ask">Game Over</div>
               <div class="text">Would you like to play again?</div>
               <button class="continue" onclick="confirmYes()">Yes</button>
