@@ -11,10 +11,23 @@
             <h2 class="subhead">Can you beat the computer to 5 wins?</h2>
         </div>
         <div id="content">
-            <div class="choices">
+            <div class="choices" id="choices">
                 <image src="artwork/rock.png" id="btnRock" onclick="handleClick('rock')" class="pick"></image>
                 <image src="artwork/paper.png" id="btnPaper" onclick="handleClick('paper')" class="pick"></image>
                 <image src="artwork/scissors.png"id="btnScissors" onclick="handleClick('scissors')" class="pick"></image>
+            </div>
+            <div class="playerImg" hidden>
+                <image src="artwork/rock.png" id="playRock" hidden></image>
+                <image src="artwork/paper.png" id="playPaper" hidden></image>
+                <image src="artwork/scissors.png" id="playScissors" hidden></image>
+            </div>
+            <div class="versus" hidden>VS</div>
+            <div class="cpuImg" hidden>
+                <div class="cpuImg" hidden>
+                    <image src="artwork/rock.png" id="cpuRock" hidden></image>
+                    <image src="artwork/paper.png" id="cpuPaper" hidden></image>
+                    <image src="artwork/scissors.png" id="cpuScissors" hidden></image>
+                </div>
             </div>
             <div id="scoreContainer" class="scoreContainer">
                 <div class="scoreBox">
