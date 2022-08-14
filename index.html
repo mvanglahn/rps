@@ -12,18 +12,18 @@
             <h4>Make your choice</h4>
         </div>
         <div class="choices">
-            <image src="artwork/rock.png" id="btnRock" class="btn"></image>
-            <image src="artwork/paper.png" id="btnPaper" class="btn"></image>
-            <image src="artwork/scissors.png"id="btnScissors" class="btn"></image>
+            <image src="artwork/rock.png" id="btnRock" onclick="handleClick('rock')"></image>
+            <image src="artwork/paper.png" id="btnPaper" onclick="handleClick('paper')"></image>
+            <image src="artwork/scissors.png"id="btnScissors" onclick="handleClick('scissors')"></image>
         </div>
         <div id="scoreContainer">
             <div class="scoreBox">
                 <div class="playerChoice"></div>
-                <h3 class="score" id="playerScore">"Player Score: " + playerScore</h3>
+                <h3 class="score">Player Score: <span id="playerScore"></span></h3>
             </div>
             <div class="scoreBox">
                 <div class="cpuChoice"></div>
-                <h3 class="score" id="cpuScore">"Computer Score: " + cpuScore</h3>
+                <h3 class="score">Computer Score: <span id="cpuScore"></span></h3>
             </div>
         </div>
     </body>

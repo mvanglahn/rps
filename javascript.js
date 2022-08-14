@@ -22,12 +22,14 @@ function playRound(playerSelect, computerSelection){
         playerSelect === 'paper' && computerSelection === 'rock'){
             window.alert("Player wins!", playerSelect, "beats", computerSelection)
             playerScore++;
+            document.getElementById("playerScore").innerHTML = playerScore;
     } else if (
             playerSelect === 'scissors' && computerSelection === 'rock' ||
             playerSelect === 'paper' && computerSelection === 'scissors' ||
             playerSelect === 'rock' && computerSelection === 'paper') {
                 window.alert("Computer wins!", playerSelect, "loses to", computerSelection)
                 cpuScore++;
+                document.getElementById("cpuScore").innerHTML = cpuScore;
     } else if (playerSelect === computerSelection){
         window.alert("It's a tie! Try again")
     }
@@ -45,6 +47,8 @@ function game() {
 }
 
 //game();
+document.getElementById("playerScore").innerHTML = playerScore;
+document.getElementById("cpuScore").innerHTML = cpuScore;
 
 btnRock.addEventListener('click', () => handleClick('rock'))
 btnScissors.addEventListener('click', () => handleClick('scissors'))
@@ -54,3 +58,5 @@ btnPaper.addEventListener('click', () => handleClick('scissors'))
 function handleClick(playerSelection) {
     playRound(playerSelection,getComputerChoice());
 }
+
+
