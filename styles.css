@@ -8,3 +8,8 @@
     justify-content: center;
     flex-wrap: nowrap;
 }
+.btn {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+}
