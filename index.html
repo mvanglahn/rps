@@ -5,43 +5,48 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <script src="javascript.js"></script>
-        <div class="header">
-            <h1 class="head">Rock, Paper, Scissors</h1>
-            <h2 class="subhead">Can you beat the computer to 5 wins?</h2>
-        </div>
-        <div id="content">
-            <div class="choices" id="choices">
-                <image src="artwork/rock.png" id="btnRock" onclick="handleClick('rock')" class="pick"></image>
-                <image src="artwork/paper.png" id="btnPaper" onclick="handleClick('paper')" class="pick"></image>
-                <image src="artwork/scissors.png"id="btnScissors" onclick="handleClick('scissors')" class="pick"></image>
+        <div class="main-container">
+            <script src="javascript.js"></script>
+            <div class="header">
+                <h1 class="head">Rock, Paper, Scissors</h1>
+                <h2 class="subhead">Can you beat the computer to 5 wins?</h2>
             </div>
-            <div id="scoreContainer" class="scoreContainer">
-                <div class="matchResult">
-                    <h2 id="result"></h2>
+            <div id="content">
+                <div class="choices" id="choices">
+                    <image src="artwork/rock.png" id="btnRock" onclick="handleClick('rock')" class="pick"></image>
+                    <image src="artwork/paper.png" id="btnPaper" onclick="handleClick('paper')" class="pick"></image>
+                    <image src="artwork/scissors.png"id="btnScissors" onclick="handleClick('scissors')" class="pick"></image>
                 </div>
-                <div class="scoreBox">
-                    <div class="playerChoice"></div>
-                    <h3 class="score">Player Score: <span id="playerScore">0</span></h3>
-                </div>
-                <div class="scoreBox">
-                    <div class="cpuChoice"></div>
-                    <h3 class="score">Computer Score: <span id="cpuScore">0</span></h3>
+                <div id="scoreContainer" class="scoreContainer">
+                    <div class="matchResult">
+                        <h2 id="result"></h2>
+                    </div>
+                    <div class="scoreBox">
+                        <div class="playerChoice"></div>
+                        <h3 class="score">Player Score: <span id="playerScore">0</span></h3>
+                    </div>
+                    <div class="scoreBox">
+                        <div class="cpuChoice"></div>
+                        <h3 class="score">Computer Score: <span id="cpuScore">0</span></h3>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div id="container">
-            <div class="replay" id="replay" hidden>
-              <div class="replay-ask">Game Over</div>
-              <div class="text">Would you like to play again?</div>
-              <button class="continue" onclick="confirmYes()">Yes</button>
-              <button class="no" onclick="confirmNo()">No</button>
+            <div id="container">
+                <div class="replay" id="replay" hidden>
+                <div class="replay-ask">Game Over</div>
+                <div class="text">Would you like to play again?</div>
+                <button class="continue" onclick="confirmYes()">Yes</button>
+                <button class="no" onclick="confirmNo()">No</button>
+                </div>
+                <div id="goodbye" hidden>
+                    <h2>Thanks for playing</h2>
+                </div>
             </div>
-            <div id="goodbye" hidden>
-                <h2>Thanks for playing</h2>
+            <div class="footer">
+                <p><a href="https://github.com/mvanglahn" target="_blank">mvanglahn</a></p>
             </div>
-          </div>
-
+        </div>
+        
     </body>
 </html>
