@@ -11,20 +11,29 @@
             <h2 class="subhead">Can you beat the computer to 5 wins?</h2>
             <h4>Make your choice</h4>
         </div>
-        <div class="choices">
-            <image src="artwork/rock.png" id="btnRock" onclick="handleClick('rock')"></image>
-            <image src="artwork/paper.png" id="btnPaper" onclick="handleClick('paper')"></image>
-            <image src="artwork/scissors.png"id="btnScissors" onclick="handleClick('scissors')"></image>
-        </div>
-        <div id="scoreContainer">
-            <div class="scoreBox">
-                <div class="playerChoice"></div>
-                <h3 class="score">Player Score: <span id="playerScore"></span></h3>
+        <div id="content">
+            <div class="choices">
+                <image src="artwork/rock.png" id="btnRock" onclick="handleClick('rock')"></image>
+                <image src="artwork/paper.png" id="btnPaper" onclick="handleClick('paper')"></image>
+                <image src="artwork/scissors.png"id="btnScissors" onclick="handleClick('scissors')"></image>
             </div>
-            <div class="scoreBox">
-                <div class="cpuChoice"></div>
-                <h3 class="score">Computer Score: <span id="cpuScore"></span></h3>
+            <div id="scoreContainer">
+                <div class="scoreBox">
+                    <div class="playerChoice"></div>
+                    <h3 class="score">Player Score: <span id="playerScore">0</span></h3>
+                </div>
+                <div class="scoreBox">
+                    <div class="cpuChoice"></div>
+                    <h3 class="score">Computer Score: <span id="cpuScore">0</span></h3>
+                </div>
             </div>
         </div>
+        <div id="replay" hidden>
+            <h3>Restart the game</h3>
+            <p>Do you want to play again?</p>
+            <button class="warning" onclick="confirmYes()">Yes</button>
+            <button onclick="confirmNo()">No</button>  
+          </div>
+        </main>
     </body>
 </html>

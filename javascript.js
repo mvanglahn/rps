@@ -1,7 +1,7 @@
 var options = ['rock', 'paper', 'scissors'];
 let playerScore = 0;
 let cpuScore = 0;
-let wonRound = ' ';
+//let wonRound = ' ';
 
 function getComputerChoice() {
     choiceNum = Math.floor(Math.random()*10/4);
@@ -14,8 +14,22 @@ function playerPrompt(){
     return pSelect.toLowerCase();
 }
 
+function endGame() {
+    document.getElementById("content").hidden=true;
+    document.getElementById("replay").hidden=false;   
+}
 
+function confirmYes() {
+    document.getElementById("replay").hidden=true;
+    document.getElementById("content").hidden=false;
+    playerScore = 0;
+    cpuScore = 0;
+}
 
+function confirmNo() {
+    document.getElementById("replay").hidden=false 
+    document.getElementById("content").innerHTML = "Thanks for playing"
+}
 function playRound(playerSelect, computerSelection){
     if (playerSelect === 'rock' && computerSelection === 'scissors' ||
         playerSelect === 'scissors' && computerSelection === 'paper' ||
@@ -57,6 +71,10 @@ btnPaper.addEventListener('click', () => handleClick('scissors'))
 
 function handleClick(playerSelection) {
     playRound(playerSelection,getComputerChoice());
+    if (playerScore == 5 || cpuScore == 5){
+        endGame();
+    }
+
 }
 
 
