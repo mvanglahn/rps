@@ -24,6 +24,8 @@ function confirmYes() {
     document.getElementById("content").hidden=false;
     playerScore = 0;
     cpuScore = 0;
+    document.getElementById("playerScore").innerHTML = playerScore;
+    document.getElementById("cpuScore").innerHTML = cpuScore;
 }
 
 function confirmNo() {

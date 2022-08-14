@@ -1,15 +1,65 @@
 .header {
-    display: space-between;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    
 }
 .choices {
-    display: space-between;
+    display: flex;
     justify-content: center;
     flex-wrap: nowrap;
+    margin: 5 10;
 }
-.btn {
-    display: inline-block;
+.pick {
+/*    display: inline-block; */
     width: 200px;
     margin: 20px;
 }
+
+.scoreContainer {
+    display: flex;
+    justify-content:center;
+}
+
+.scoreBox {
+    margin: 0 20px;
+}
+
+.replay {
+    background: white;
+    width: 480px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  }
+  
+  .icon {
+    color: royalblue;
+    font-size: 26px;
+    font-weight: 700;
+    background: lavender;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ 
+  button {
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+  
+  button.yes {
+    background: royalblue;
+    border: 1px solid royalblue;
+    color: white;
+  }
+  
+  button.no {
+    background: white;
+    border: 1px solid #ddd;
+    color: royalblue;
+  }
