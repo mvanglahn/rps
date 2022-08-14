@@ -44,14 +44,5 @@ function game() {
     } 
 }
 
-game();
-if (i = 6) {
-    if (playerScore > cpuScore){
-        console.log("You win!");
-    } else if (playerScore < cpuScore){
-        console.log("CPU wins!");
-    } else {
-        console.log("It's a tie")
-    }
-}
+//game();
 

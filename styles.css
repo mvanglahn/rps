@@ -1,0 +1,10 @@
+.header {
+    display: space-between;
+    justify-content: center;
+    align-items: center;
+}
+.choices {
+    display: space-between;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
