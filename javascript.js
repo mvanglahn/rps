@@ -25,8 +25,8 @@ function confirmYes() {
 }
 
 function confirmNo() {
-    document.getElementById("replay").hidden=false 
-    document.getElementById("content").innerHTML = "Thanks for playing"
+    document.getElementById("replay").hidden=true;
+    document.getElementById("goodbye").hidden=false; 
 }
 function playRound(playerSelect, computerSelection){
     if (playerSelect === 'rock' && computerSelection === 'scissors' ||
